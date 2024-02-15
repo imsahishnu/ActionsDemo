@@ -1,0 +1,12 @@
+name: First Workflow  # We are now actually creating a workflow , give a workflow name
+on: workflow_dispatch   #when this workflow should be activated, we define the events which will trigger the workflow
+jobs:  #next line hit tab
+  first-job: #next line hit tab, a job requires either a runs on or uses
+    runs-on: ubuntu-latest # requires a runner to run on
+    steps:
+      - name: Print greeting 
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "Done -bye"
+    
+  
